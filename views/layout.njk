@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <link href="/style.css" rel="stylesheet">
+        <title>Desafio3-1</title>
+    </head> 
+
+    <!--Body é responsável por todo o conteúdo da página-->
+    <body>
+        <header>
+            <!--Com as divs posso separar a página em "blocos"-->
+            <!--Com a classe consigo modificar especificamente cada bloco no CSS-->
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="https://discordapp.com/invite/gCRAFhc" target="blank">Comunidade</a>
+                <a href="mailto:oi@rocketseat.com.br" target="blank">Rocketseat</a>
+                <a href="tel:+5547992078767" target="blank">Telefone</a>
+                <a href="/courses">Conteúdo</a>
+            </div>
+
+    {% block content%} {% endblock %}
+
+    
+
+</html>
