@@ -1,0 +1,193 @@
+:root {
+    --color-white: #ffffff;
+    --color-green: #50fa7b;
+    --color-purple: #7159c1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-white);
+}
+
+body {
+    background: #282a36;                     
+}
+
+.links {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 32px;  
+    text-align: center;
+}
+
+header div a  {
+    
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px;
+}
+ 
+header div a:hover{
+    color: var(--color-green);
+    transition: color 400ms;
+}
+
+/*COMPANY*/
+
+#EmpresaIMG {
+    text-align: center;
+    padding: 30px;
+}
+
+#EmpresaIMG img {
+    border-radius: 50%;
+}
+
+#EmpresaIMG h1 {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 38px;
+    margin: 40px;
+}
+
+/*TECNOLOGIES*/
+
+#Tecnologias {
+    text-align: center;
+}
+
+#Tecnologias img {
+    padding: 15px;
+    height: 80px;
+}
+
+#Tecnologias {
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 38px;
+    margin: 10px;
+}
+
+/*BLOG-CARDS*/
+
+.blog {
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+}
+
+.cards {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.card {
+    background-color: var(--color-purple);
+}
+
+.card:hover {
+    -moz-box-shadow: 0 0 1px var(--color-purple);
+    -webkit-box-shadow: 0 0 10px var(--color-purple);
+     box-shadow: 0 0 10px var(--color-purple);
+}
+
+.card_image img {
+    width: 100%;
+}
+
+.card_description,
+.card_info {
+    padding: 24px;
+    font-size: 15px;
+    padding-bottom: 18px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;   
+}
+
+.card_time {
+    filter: brightness(90%);
+    border-radius: 15px;
+    text-align: right;
+}
+
+/*MODAL*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: var(--color-purple);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+/*MODAL ACTIVE*/
+
+.modal-overlay.active {
+    opacity: 1;   
+    visibility: visible; 
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+/*SOCIAL MEDIAS*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+#SocialMedias a {
+    text-decoration: none;
+}
+
+#SocialMedias img {
+    height: 24px;
+    filter: grayscale(100%);
+    border-radius: 50px;  
+}
+
+#SocialMedias img:hover {     
+    -moz-box-shadow: 0 0 1px var(--color-purple);
+    -webkit-box-shadow: 0 0 10px var(--color-purple);
+    box-shadow: 0 0 10px var(--color-purple);
+    filter: blur(0.1px);
+    border-radius: 50%
+}
