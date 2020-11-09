@@ -144,9 +144,9 @@ header div a:hover{
 
 .modal .close-modal {
     color: black;
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 8px;
+    top: 6px;
     right: 8px;
     cursor: pointer;
 }
