@@ -191,3 +191,10 @@ footer {
     filter: blur(0.1px);
     border-radius: 50%
 }
+
+.notfound {
+    text-align: center;
+    padding-top: 300px;
+    width: 100;
+    height: 100;
+}

@@ -20,6 +20,10 @@ server.get("/courses", function(req, res){
     return res.render("courses")
 })
 
+server.use(function(req, res){
+    res.status(404).render("not-found")
+})
+
 //Definindo Porta
 server.listen(5000, function(){
     console.log("Server is running")
