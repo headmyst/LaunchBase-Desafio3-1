@@ -20,6 +20,7 @@ server.get("/courses", function(req, res){
     return res.render("courses")
 })
 
+//Essa rota é direcionada a uma página não existente, famoso erro 404
 server.use(function(req, res){
     res.status(404).render("not-found")
 })
