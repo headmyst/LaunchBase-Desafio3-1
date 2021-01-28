@@ -7,44 +7,23 @@
     </div>
 
     <section class="cards">
-        <div class="card" id="por-que-escrever-testes-automatizados/"> 
+    {% for item in items  %}
+        <div class="card" id="{{item.id}}"> 
             <div class="card_image">
-                <img src="https://blog.rocketseat.com.br/content/images/2019/03/Testes-automatizados--Experie-ncia-pessoal-.png"></image>
+                <img src="https://blog.rocketseat.com.br/{{item.image}}" alt=Img></img>
+                {% if item.featured %}
+                    <div class="featured"> Featured </div>
+                {% endif %}
             </div>
             <div class="card_description">
-                <p>Porque escrever testes automatizados</p>
+                <p>{{item.title}}</p>
             </div>
             <div class="card_info">
-                <p>Por Higo Ribeiro</p>
-                <p class="card_time">4 min</p>
+                <p>{{item.author}}</p>
+                <p class="card_time">{{item.duration}}</p>
             </div>
         </div> 
-
-        <div class="card" id="ambiente-desenvolvimento-javascript/"> 
-            <div class="card_image">
-                <img src="https://blog.rocketseat.com.br/content/images/2018/12/ambiente-desenvolvimento-javascript.png"></image>
-            </div>
-            <div class="card_description">
-                <p>Ambiente Javascript: Dicas, VSCode e terminal</p>
-            </div>
-            <div class="card_info">
-                <p>Por Diego Fernandes</p>
-                <p class="card_time">4 min</p>
-            </div>
-        </div> 
-
-        <div class="card" id="ssr-nextjs-reactjs/"> 
-            <div class="card_image">
-                <img src="https://blog.rocketseat.com.br/content/images/2018/12/ssr-nextjs-reactjs.png"></image>
-            </div>
-            <div class="card_description">
-                <p>Server-side rendering (SSR) com ReactJS e Next.js</p>
-            </div>
-            <div class="card_info">
-                <p>Por Diego Fernandes</p>
-                <p class="card_time">4 min</p>
-            </div>
-        </div> 
+    {% endfor %}
     </section>
 
     <div class="modal-overlay">
